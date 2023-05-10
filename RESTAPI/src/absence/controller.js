@@ -27,8 +27,8 @@ const addAbsence = (req, res) => {
 			throw err;
 		}
 		res.status(201).send(`Absence added with ID: ${results.insertId}`);
-	})
-}
+	});
+};
 
 module.exports = {
 	getAbsence,
